@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<div sec:authorize="hasRole('ADMIN')">
+		이 내용은 관리자(admin)용이다.</div>
 
+	<div sec:authorize="hasRole('USER')">
+		이 내용은 사용자(user)용이다.</div>
 </body>
 </html>
