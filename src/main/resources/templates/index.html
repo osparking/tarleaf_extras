@@ -12,5 +12,12 @@
 
 	<div sec:authorize="hasRole('USER')">
 		이 내용은 사용자(user)용이다.</div>
+		
+	<div>
+		사용자: <span sec:authentication="name">발견되지 않음</span> 
+		<br>
+		봄 역할: <span sec:authentication="principal.authorities">
+				발견되지 않음</span>
+	</div>		
 </body>
 </html>
